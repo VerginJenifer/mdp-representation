@@ -12,8 +12,11 @@ An agent (delivery person) is assigned to deliver food from a restaurant to a cu
 The state space represents all possible stages of the delivery process:
 
 D0 → Order Not Picked
+
 D1 → Food Picked
+
 D2 → On the Way
+
 D3 → Delivered (Goal State)
 
 ### Sample State
