@@ -12,12 +12,8 @@ An agent (delivery person) is assigned to deliver food from a restaurant to a cu
 The state space represents all possible stages of the delivery process:
 
 D0 → Order Not Picked
-
 D1 → Food Picked
-
-D2 → On the Way
-
-D3 → Delivered (Goal State)
+D2 → Delivered (Goal State)
 
 ### Sample State
 "Food is picked and the agent is on the way to the customer" (D2)
@@ -35,14 +31,14 @@ The possible actions available to the agent:
 
 ### Reward Function
 The reward function guides the agent:
-
 +10 → Successfully picking up food
 +20 → Delivering food to customer (goal achieved)
 -2 → Delay in movement
 -5 → Wrong action or unnecessary delay
 
 ### Graphical Representation
-<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/21bbfdfb-77a8-481a-b417-a396f641a782" />
+<img width="611" height="197" alt="image" src="https://github.com/user-attachments/assets/4df3c03f-7e1d-46c1-898f-4d98c13f8ac4" />
+
 
 
 ## PYTHON REPRESENTATION:
