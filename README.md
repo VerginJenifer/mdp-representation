@@ -4,6 +4,7 @@
 To model the food delivery process as a Markov Decision Process (MDP) and analyze the states, actions, and rewards involved in completing the delivery efficiently.
 
 ## PROBLEM STATEMENT:
+An agent (delivery person) is assigned to deliver food from a restaurant to a customer. The goal is to complete the delivery quickly while minimizing delays and effort. The agent chooses actions such as picking up food, moving, or delivering based on the current state.
 
 ### Problem Description
 An agent (delivery person) is assigned to deliver food from a restaurant to a customer. The goal is to complete the delivery quickly while minimizing delays and effort. The agent chooses actions such as picking up food, moving, or delivering based on the current state.
@@ -42,11 +43,33 @@ The reward function guides the agent:
 
 
 ## PYTHON REPRESENTATION:
-
+```
+P = {
+  0: {
+    0: [(1.0, 0, -2.0, False)],
+    1: [(1.0, 1, +10.0, False)],
+    2: [(1.0, 0, -3.0, False)],
+    3: [(1.0, 0, -3.0, False)]
+  },
+  1: {
+    0: [(1.0, 1, -3.0, False)],
+    1: [(1.0, 1, -2.0, False)],
+    2: [(1.0, 2, +20.0, True)],
+    3: [(1.0, 1, -3.0, False)]
+  },
+  2: {
+    0: [(1.0, 2, 0, True)],
+    1: [(1.0, 2, 0, True)],
+    2: [(1.0, 2, 0, True)],
+    3: [(1.0, 2, 0, True)]
+  }
+}
+```
 
 ## OUTPUT:
-Write your Python output here
+<img width="296" height="294" alt="image" src="https://github.com/user-attachments/assets/db4bc3ef-9bed-485f-8200-8667126d09d5" />
+
 
 ## RESULT:
-Write your output here
+Thus, the food delivery process problem is successfully represented in MDP form.
 
